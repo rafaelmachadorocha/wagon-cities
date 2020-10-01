@@ -6,7 +6,6 @@ import { clickCity } from '../actions';
 class City extends Component {
 
       handleClick = () => {
-        console.log(this.props.city)
         this.props.click(this.props.city);
       }
   
