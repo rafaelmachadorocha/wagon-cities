@@ -35,3 +35,9 @@ body {
 .clicked + .list-group-item {
   border-top: 1px solid yellow;
 }
+
+.image-active-city {
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+}
