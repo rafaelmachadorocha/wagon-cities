@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { setCities } from '../actions';
+import City from './city';
 
 class CityList extends Component {
 
@@ -12,7 +13,7 @@ class CityList extends Component {
   render() {
     return (
       <ul className="cities col-3">
-          {this.props.cities.map(city => <li className="list-group-item" key={city.name}>{city.name}</li>)}
+        { this.props.cities.map((city) => <City key={city.name} city={city} />) }
       </ul>
     )
   }

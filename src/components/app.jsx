@@ -1,5 +1,5 @@
 import React from 'react';
-import CityList from '../containers/city_list'
+import CityList from '../containers/city_list';
 
 const App = () => {
   return (

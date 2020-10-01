@@ -8,10 +8,12 @@ import { createStore, combineReducers } from 'redux';
 import App from './components/app';
 import '../assets/stylesheets/application.scss';
 import citiesReducer from './reducers/cities_reducer';
+import clickedCityReducer from './reducers/clicked_city_reducer';
 
 // State and reducers
 const reducers = combineReducers({
-  cities: citiesReducer
+  cities: citiesReducer,
+  clickedCity: clickedCityReducer
 });
 
 // render an instance of the component in the DOM
